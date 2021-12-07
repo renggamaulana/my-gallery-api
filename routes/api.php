@@ -21,6 +21,7 @@ use App\Http\Controllers\BookController;
 // });
 
 Route::get('/pictures', [BookController::class, 'get']);
+Route::get('/pictures/{id}', [BookController::class, 'getById']);
 
 Route::post('/picture', [BookController::class, 'post']);
 
